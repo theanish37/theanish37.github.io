@@ -12,31 +12,31 @@ postnominals:
   - PhD
 status:
   icon: "☕️"
-role: Senior AI Research Scientist
+role: Astronomy PhD Student
 bio: |
-  I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) in Poland, 
+  I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) \url{https://www.camk.edu.pl/en/} in Poland, 
   currently bridging the gap between theoretical models and observational data. 
   With a background in Engineering Physics from Delhi Technological University and an MS in Astrophysics & Cosmology from the University of Padova, 
   I approach astronomical problems with a first-principles mindset and a robust technical toolkit.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Nicolaus Copernicus Astronomical Center, Poland
+    url: https://www.camk.edu.pl/en/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:akalsi@ncac.torun.pl
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
+  #- icon: brands/x
+  #  url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/theanish37
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/anish-kalsi-248143154/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=7RMHBj4AAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0002-4504-873X
 
 interests:
   - Observational Astronomy
@@ -44,41 +44,41 @@ interests:
   - Machine Learning and Artificial Intelligence
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+  - degree: PhD Astronomy
+    institution: Nicolaus Copernicus Astronomical Center, Poland
+    start: December 2025
+    end: Present
+    #summary: |
+    #  Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+    #button:
+    #  text: Download dissertation
+    #  url: /resume.pdf
+    #  icon: hero/arrow-down-tray
+  - degree: MS Astrophysics and Cosmology 
+    institution: Università degli Studi di Padova
+    start: October 2023
+    end: September 2025
+  - degree: B.Tech Engineering Physics
+    institution: Delhi Technological University (Formerly DCE)
+    start: August 2019
+    end: June 2023
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+#   - role: Senior AI Research Scientist
+#    org: Meta AI
+#    start: 2020-01-01
+#    summary: |
+#      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+#    button:
+#      text: View portfolio
+#      url: /
+#      icon: hero/arrow-down-tray
+#  - role: AI Research Intern
+#    org: OpenAI
+#    start: 2019-06-01
+#    end: 2019-12-31
+#    summary: |
+#      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 skills:
   - name: Technical Skills
@@ -87,28 +87,28 @@ skills:
         level: 5
       - label: Machine Learning
         level: 5
-      - label: Cloud Computing
-        level: 4
+      #- label: Cloud Computing
+      #  level: 4
   - name: Research & Communication
     items:
       - label: Academic Writing
         level: 5
       - label: Conference Presentations
         level: 4
-      - label: Grant Proposals
-        level: 4
+      #- label: Grant Proposals
+      #  level: 4
 
 languages:
   - name: English
     level: 5
-    label: Native
-  - name: Spanish
-    level: 4
     label: Fluent
+  - name: Hindi
+    level: 5
+    label: Native
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+#awards:
+#  - title: Best Paper Award
+#    awarder: NeurIPS
+#    date: "2022-12-01"
+#    summary: Awarded for groundbreaking work on efficient training of large models.
+#    icon: hero/trophy
