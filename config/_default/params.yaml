@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "cademic website of Anish Kalsi, Astronomy PhD student at Nicolaus Copernicus Astronomical Center (NCAC\CAMK PAS) in Poland"
+    description: "cademic website of Anish Kalsi, Astronomy PhD student at Nicolaus Copernicus Astronomical Center (NCAC or CAMK PAS) in Poland"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "BuildLore"              # Twitter/X handle for Twitter Cards (without @)
