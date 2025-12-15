@@ -290,6 +290,3 @@ hugoblox:
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
 
-features:
-  avatar:
-    shape: square
