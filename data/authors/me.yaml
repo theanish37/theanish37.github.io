@@ -46,7 +46,7 @@ interests:
 education:
   - degree: PhD Astronomy
     institution: Nicolaus Copernicus Astronomical Center, Poland
-    start: December 2025
+    start: 2025
     end: Present
     #summary: |
     #  Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
