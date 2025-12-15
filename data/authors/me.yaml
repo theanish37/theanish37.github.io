@@ -65,9 +65,9 @@ education:
 
 experience:
    - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
+     org: Meta AI
+     start: 2020-01-01
+     summary: |
       Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
 #    button:
 #      text: View portfolio
