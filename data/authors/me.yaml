@@ -46,8 +46,8 @@ interests:
 education:
   - degree: PhD Astronomy
     institution: Nicolaus Copernicus Astronomical Center, Poland
-    start: December 2025
-    end: December 2029
+    start: 2025-12-06
+    end: 2029-12-01
     #summary: |
     #  Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
     #button:
@@ -56,12 +56,12 @@ education:
     #  icon: hero/arrow-down-tray
   - degree: MS Astrophysics and Cosmology 
     institution: Università degli Studi di Padova
-    start: October 2023
-    end: September 2025
+    start: 2023-10-01
+    end: 2025-09-01
   - degree: B.Tech Engineering Physics
     institution: Delhi Technological University (Formerly DCE)
-    start: August 2019
-    end: June 2023
+    start: 2019-07-01
+    end: 2023-06-01
 
 experience:
    - role: Senior AI Research Scientist
