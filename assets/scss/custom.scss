@@ -10,3 +10,8 @@
 img.avatar {
   border-radius: 5% !important;
 }
+
+/* Hide the 'Powered by' text in the footer */
+.powered-by {
+  display: none !important;
+}
