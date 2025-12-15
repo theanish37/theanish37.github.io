@@ -1,7 +1,12 @@
-/* Remove circular cropping from avatar */
-.avatar-circle {
-    border-radius: 0 !important;
-  }
-  
-  /* Optional: Add a small curve so it isn't too sharp */
-  /* border-radius: 5px !important; */
+/* Force square avatar everywhere */
+.avatar-circle,
+.avatar,
+#profile .avatar,
+.article-header .avatar {
+  border-radius: 5% !important; /* 0% for perfect square, 5% for slight rounded corners */
+}
+
+/* Ensure the image itself doesn't have rounding */
+img.avatar {
+  border-radius: 5% !important;
+}
