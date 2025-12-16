@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{{- $language_code := site.LanguageCode | default "en-us" -}}
+<html lang="{{ $language_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  
+  {{- hugo.Generator -}}
+  {{- partial "site_head" . -}}
+</head>
+<body class="page-wrapper {{ if .IsHome }}home{{ end }}">
+
+  {{- partial "site_header" . -}}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{- partial "site_footer" . -}}
+
+  <script src="/js/binary-stars.js"></script>
+  </body>
+</html>
