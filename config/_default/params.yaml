@@ -292,5 +292,5 @@ hugoblox:
 
 
   #custom js
-  custom_js = ["js/binary-stars.js"]
+  #custom_js = ["js/binary-stars.js"]
 
