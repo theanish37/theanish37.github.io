@@ -3,3 +3,35 @@
       &copy; {{ now.Year }} Anish Kalsi. All rights reserved.
     </p>
   </footer>
+
+<footer class="site-footer">
+  <p class="powered-by">
+    &copy; 2025 {{ .Site.Title }} | <a href="https://github.com/theanish37">GitHub</a>
+  </p>
+</footer>
+
+<script src="/js/binary-stars.js"></script>
+<script>
+  console.log("⭐⭐⭐ FORCE LOADED: Binary Stars System ⭐⭐⭐");
+</script>
+
+<style>
+  canvas {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 1 !important; /* Above background */
+    pointer-events: none !important; /* Clicks pass through */
+    opacity: 0.6 !important;
+  }
+  /* Ensure body background is transparent so canvas shows through */
+  body, .page-wrapper, section {
+    background: transparent !important;
+  }
+  /* Set a dark background on the HTML element behind the canvas */
+  html {
+    background-color: #0d1117; 
+  }
+</style>
