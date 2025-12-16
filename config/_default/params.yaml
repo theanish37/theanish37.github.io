@@ -290,3 +290,7 @@ hugoblox:
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
 
+
+  #custom js
+  custom_js = ["js/binary-stars.js"]
+
