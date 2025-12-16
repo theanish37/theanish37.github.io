@@ -1,38 +1,39 @@
 // static/js/binary-stars.js
 
 (function() {
-    console.log("⭐⭐⭐ Binary Star System: Physics Upgrade v2.0 ⭐⭐⭐");
+    console.log("⭐⭐⭐ Binary Star System: Floating Layer v3.0 ⭐⭐⭐");
 
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
-    // Z-Index 1 places it ON TOP of the content.
-    // Pointer-events: none ensures you can still click links behind the stars.
+    // --- FORCE VISIBILITY ---
     canvas.style.position = 'fixed';
     canvas.style.top = '0';
     canvas.style.left = '0';
     canvas.style.width = '100%';
     canvas.style.height = '100%';
-    canvas.style.zIndex = '1'; 
-    canvas.style.pointerEvents = 'none'; 
     
-    // Blend mode 'screen' looks great on Dark Mode (adds light).
-    // On Light Mode (white bg), it naturally fades out (invisible), which is usually desired.
-    canvas.style.mixBlendMode = 'screen'; 
+    // Z-INDEX 99: Floats ON TOP of everything (text, headers, backgrounds)
+    canvas.style.zIndex = '99'; 
+    
+    // POINTER EVENTS NONE: This is CRITICAL. 
+    // It allows your mouse to click "through" the stars to select text or click links.
+    canvas.style.pointerEvents = 'none'; 
     
     document.body.appendChild(canvas);
 
     // --- CONFIGURATION ---
-    const orbitalScale = 200;  // Scale of the orbit
-    const eccentricity = 0.4;  // 0 = circle, 0.9 = long oval
-    const inclination = 70 * (Math.PI / 180); // Tilt in radians
-    const starARadius = 15;    // Blue Giant
-    const starBRadius = 8;     // Red Dwarf
+    // Adjusted for Top-Left positioning
+    const orbitalScale = 150;  
+    const eccentricity = 0.4;  
+    const inclination = 70 * (Math.PI / 180); 
+    const starARadius = 12;    
+    const starBRadius = 6;     
     
     // State
     let width, height, centerX, centerY;
-    let baseAngle = 0;         // Angle derived from scroll
-    let autoRotationAddon = 0; // Angle added by auto-rotation
+    let baseAngle = 0;         
+    let autoRotationAddon = 0; 
     let lastScrollTime = Date.now();
     let isAutoRotating = false;
 
@@ -43,33 +44,34 @@
         canvas.width = width;
         canvas.height = height;
         
-        // Position: Top Left (20% from left, 20% from top)
-        centerX = width * 0.2;
-        centerY = height * 0.2;
+        // --- POSITION: TOP LEFT ---
+        // 250px from left, 250px from top. 
+        // We use fixed pixels so it stays in the corner regardless of screen size.
+        centerX = 250;
+        centerY = 250;
+        
+        // If on mobile, center it instead so it's not off-screen
+        if (width < 600) {
+            centerX = width / 2;
+            centerY = height / 3;
+        }
     }
     window.addEventListener('resize', resize);
     resize();
 
-    // --- ORBITAL PHYSICS CALCULATOR ---
-    // Returns {x, y, z} for a body at angle theta
-    // Uses the polar equation of an ellipse from the focus: r = a(1-e^2) / (1 + e*cos(theta))
+    // --- PHYSICS ENGINE ---
     function getPosition(theta, isPrimary) {
-        // For visual simplicity, we assume the Barycenter is at (0,0)
-        // Primary moves in smaller ellipse, Secondary in larger (mass ratio)
+        const massRatio = isPrimary ? 0.4 : 1.0; 
+        const angle = theta + (isPrimary ? 0 : Math.PI); 
         
-        const massRatio = isPrimary ? 0.4 : 1.0; // Primary moves less
-        const angle = theta + (isPrimary ? 0 : Math.PI); // Opposite sides
-        
-        // 1. Keplerian Radius (r)
-        // Distance varies with angle due to eccentricity
+        // Keplerian Radius
         const r = (orbitalScale * massRatio) * (1 - eccentricity * eccentricity) / (1 + eccentricity * Math.cos(angle));
 
-        // 2. 2D Plane Coordinates (Un-inclined)
+        // 2D Plane
         let x = r * Math.cos(angle);
         let y = r * Math.sin(angle);
 
-        // 3. Apply Inclination (Tilt around X-axis)
-        // Imagine rotating the plane. Y gets "squashed" by cos(inclination)
+        // Inclination Tilt
         y = y * Math.cos(inclination);
 
         return { x: centerX + x, y: centerY + y };
@@ -79,58 +81,55 @@
     function draw() {
         ctx.clearRect(0, 0, width, height);
 
-        // 1. Time Management
+        // 1. Idle Timer Logic
         const now = Date.now();
         const timeSinceScroll = now - lastScrollTime;
 
-        // 2. Calculate Angle
+        // If idle for > 5 seconds, rotate automatically
         if (timeSinceScroll > 5000) {
-            // Auto-rotate mode
-            autoRotationAddon += 0.005; // Speed of auto-rotation
+            autoRotationAddon += 0.002; // Slow drift
             isAutoRotating = true;
         } 
         
         const currentTheta = baseAngle + autoRotationAddon;
 
-        // 3. Calculate Positions
         const posA = getPosition(currentTheta, true);
         const posB = getPosition(currentTheta, false);
 
-        // 4. Draw Star A (Blue Giant)
-        drawStar(posA.x, posA.y, starARadius, '#4aa3ff', 'rgba(74, 163, 255, 0.4)');
+        // Draw Star A (Blue)
+        drawStar(posA.x, posA.y, starARadius, '#4aa3ff', 'rgba(74, 163, 255, 0.6)');
 
-        // 5. Draw Star B (Red Dwarf)
-        drawStar(posB.x, posB.y, starBRadius, '#ff4d4d', 'rgba(255, 77, 77, 0.4)');
+        // Draw Star B (Red)
+        drawStar(posB.x, posB.y, starBRadius, '#ff4d4d', 'rgba(255, 77, 77, 0.6)');
         
         requestAnimationFrame(draw);
     }
 
-    function drawStar(x, y, r, color, glow) {
+    function drawStar(x, y, r, color, glowColor) {
         ctx.beginPath();
-        const g = ctx.createRadialGradient(x, y, r*0.2, x, y, r*3);
+        // Sharper gradient for better visibility against light backgrounds
+        const g = ctx.createRadialGradient(x, y, r*0.2, x, y, r*2.5);
         g.addColorStop(0, color);
-        g.addColorStop(0.2, glow);
+        g.addColorStop(0.4, glowColor);
         g.addColorStop(1, 'rgba(0,0,0,0)');
         ctx.fillStyle = g;
-        ctx.arc(x, y, r*4, 0, Math.PI*2); // Draw simplified circle for glow
+        ctx.arc(x, y, r*3, 0, Math.PI*2);
         ctx.fill();
     }
 
     // --- SCROLL SYNC ---
     window.addEventListener('scroll', () => {
         lastScrollTime = Date.now();
-        // Calculate scroll angle (1 rotation per 2000px)
-        // We subtract the current 'auto' offset so the star doesn't jump when you touch the mouse
-        const targetScrollAngle = (window.scrollY / 2000) * Math.PI * 2;
         
+        // Manual Scroll Overrides Auto Rotation
         if (isAutoRotating) {
-            // Smooth handover: Define baseAngle so that (base + auto) equals the current position
-            // But to keep it simple: just reset auto and snap to scroll is usually okay.
-            // For smoother UI, we just update baseAngle.
+            // Reset the auto-addon so we snap back to scroll control smoothly
+            // (Or you can latch it, but resetting is simpler logic)
             isAutoRotating = false;
         }
         
-        baseAngle = targetScrollAngle;
+        // 1 rotation per 3000px of scrolling
+        baseAngle = (window.scrollY / 3000) * Math.PI * 2;
     });
 
     draw();
