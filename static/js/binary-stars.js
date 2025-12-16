@@ -27,8 +27,8 @@
     const orbitalScale = 150;  
     const eccentricity = 0.4;  
     const inclination = 70 * (Math.PI / 180); 
-    const starARadius = 12;    
-    const starBRadius = 6;     
+    const starARadius = 16;    
+    const starBRadius = 8;     
     
     // State
     let width, height, centerX, centerY;
