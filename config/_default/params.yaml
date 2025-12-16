@@ -291,6 +291,6 @@ hugoblox:
     affiliate_code: ""
 
 
-  #custom js
-  #custom_js = ["js/binary-stars.js"]
+  plugins_js:
+  - binary-stars
 

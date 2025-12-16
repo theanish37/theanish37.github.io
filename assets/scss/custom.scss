@@ -15,3 +15,21 @@ img.avatar {
 .powered-by {
   display: none !important;
 }
+
+/* Force Canvas Visibility */
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1 !important; /* Forces it above the background */
+  pointer-events: none; /* Clicks pass through */
+  mix-blend-mode: screen; /* Makes black pixels transparent */
+}
+
+/* Ensure the page background is transparent enough to see through */
+body {
+  background-color: #0d1117; /* Deep space dark */
+}
+.page-wrapper {
+  background-color: transparent !important;
+}
