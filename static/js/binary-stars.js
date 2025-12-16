@@ -1,4 +1,5 @@
 // static/js/binary-stars.js
+console.log("⭐⭐⭐ Binary Star System Online ⭐⭐⭐");
 
 (function() {
     // 1. Setup the Canvas
@@ -11,9 +12,18 @@
     canvas.style.left = '0';
     canvas.style.width = '100%';
     canvas.style.height = '100%';
-    canvas.style.zIndex = '-1'; // Behind everything
-    canvas.style.pointerEvents = 'none'; // Let clicks pass through
-    canvas.style.opacity = '0.6'; // Subtle blending
+    
+    // CHANGE 1: Bring it forward slightly
+    // If -1 is hidden, we try 0 or 1. 
+    // Since we use pointer-events: none, it won't block clicks.
+    canvas.style.zIndex = '0'; 
+    
+    // CHANGE 2: Ensure clicks pass through to your links/buttons
+    canvas.style.pointerEvents = 'none'; 
+    
+    // CHANGE 3: Transparency
+    canvas.style.opacity = '0.8'; 
+    
     document.body.appendChild(canvas);
 
     // 2. Astronomy Configuration
