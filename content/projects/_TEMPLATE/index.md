@@ -9,6 +9,11 @@
 # 4. Commit and push — the project will appear on the site
 # ==============================================================
 
+draft: true
+build:
+  render: never
+  list: never
+
 title: Project Title Here
 date: 2026-01-01   # Date the project started or was published
 

@@ -9,6 +9,11 @@
 # 4. Commit and push — the paper will appear automatically
 # ==============================================================
 
+draft: true
+build:
+  render: never
+  list: never
+
 title: "Full paper title goes here"
 
 # List all authors. Use `me` (no quotes) for yourself so your
