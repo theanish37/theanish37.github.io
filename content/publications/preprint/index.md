@@ -36,8 +36,8 @@ links:
     url: "https://academic.oup.com/mnras/article/525/4/5204/7246696"
 
 image:
-  caption: ''
-  focal_point: ""
+  caption: 'GMM clustering of X-ray GRB plateau properties (MNRAS 525, 2023)'
+  focal_point: "Center"
   preview_only: false
 
 projects: []

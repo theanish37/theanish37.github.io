@@ -33,8 +33,8 @@ links:
     url: "https://www.aanda.org/articles/aa/full_html/2024/01/aa47104-23/aa47104-23.html"
 
 image:
-  caption: ''
-  focal_point: ""
+  caption: 'Edge-on galactic distribution of 339 Low-Mass X-ray Binaries (A&A 684, 2024)'
+  focal_point: "Center"
   preview_only: false
 
 projects: []

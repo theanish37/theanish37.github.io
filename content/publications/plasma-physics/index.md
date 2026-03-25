@@ -24,10 +24,14 @@ tags:
   - Theoretical Astrophysics
 featured: false
 
+links:
+  - name: "SSRN"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4046827"
+
 image:
   caption: ''
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 projects: []
 slides: ""
