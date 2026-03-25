@@ -41,11 +41,11 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        My research focuses on **observational stellar astrophysics**, with a particular emphasis on B/Be stars in open clusters and their spectro-photometric properties. For my Master's thesis, I carried out a detailed study of the B/Be star population in the open cluster **Trumpler 11** using photometric and spectroscopic data from the Gemini Observatory.
+        My current research at **NCAC PAS** focuses on **detached eclipsing binary stars** — studying stellar evolution through precise determination of fundamental stellar parameters (masses, radii, temperatures, luminosities). Eclipsing binaries are among the most powerful tools in astrophysics for testing stellar evolution models, and I work on characterising them with high-precision photometric and spectroscopic observations.
 
-        I am also broadly interested in **X-ray binaries** — I contributed to a comprehensive catalogue of Low-Mass X-ray Binaries (LMXBs) in the Galaxy, combining data from INTEGRAL and Gaia. Additionally, I have worked on applying **unsupervised machine learning** methods (GMM, DBSCAN, pyUPMASK) to stellar cluster membership determination using Gaia DR3 data, as well as classifying GRB plateau properties.
+        For my Master's thesis, I carried out a **spectro-photometric study of B/Be stars** in the open cluster Trumpler 11 using data from the Gemini Observatory, supervised by Prof. Lydia Cidale (UNLP) and Dr. Antonino Milone (UniPd).
 
-        At NCAC PAS, I am working under the supervision of Dr. Krzysztof Helminiak on close binary star systems.
+        I am also broadly interested in **X-ray binaries** — I contributed to a comprehensive catalogue of Low-Mass X-ray Binaries (LMXBs) in the Galaxy, combining INTEGRAL and Gaia data. I have also applied **unsupervised machine learning** methods to stellar cluster membership determination (Gaia DR3) and to classifying GRB plateau properties.
 
         Please feel free to reach out if you'd like to collaborate!
     design:

@@ -1,6 +1,10 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
+
+# ============================================================
+# BASIC INFO — edit name, role, bio freely
+# ============================================================
 name:
   display: Anish Kalsi
   given: Anish
@@ -8,20 +12,30 @@ name:
   alternate: ''
   pronunciation: ''
   pronouns: he/him
-postnominals: []
+postnominals: []  # e.g. ["PhD"] once degree is awarded
 status:
   icon: "☕️"
-role: Astronomy PhD Student
+role: Astronomy PhD Student  # Shown under your name on the homepage
 bio: |
   I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) in Poland,
   currently bridging the gap between theoretical models and observational data.
   With a background in Engineering Physics from Delhi Technological University and an MS in Astrophysics & Cosmology from the University of Padova,
   I approach astronomical problems with a first-principles mindset and a robust technical toolkit.
 
+# ============================================================
+# AFFILIATIONS — your institution(s)
+# ============================================================
 affiliations:
   - name: Nicolaus Copernicus Astronomical Center, Poland
     url: https://www.camk.edu.pl/en/
+  # To add another affiliation, copy the two lines above
 
+# ============================================================
+# SOCIAL LINKS
+# icon options: at-symbol, brands/github, brands/linkedin,
+#   brands/twitter, brands/instagram, academicons/google-scholar,
+#   academicons/orcid, academicons/researchgate
+# ============================================================
 links:
   - icon: at-symbol
     url: mailto:akalsi@ncac.torun.pl
@@ -35,17 +49,27 @@ links:
   - icon: academicons/orcid
     url: https://orcid.org/0009-0002-4504-873X
 
+# ============================================================
+# INTERESTS — bullet list shown on homepage
+# Add/remove items freely
+# ============================================================
 interests:
-  - Observational Astronomy
-  - Stellar Astrophysics
+  - Detached Eclipsing Binaries
+  - Stellar Evolution
+  - Observational Stellar Astrophysics
   - X-ray Binaries
   - Machine Learning in Astronomy
 
+# ============================================================
+# EDUCATION
+# To add a new degree, copy one block (- degree: ... through summary: |)
+# Leave `end` blank or omit it if currently ongoing
+# ============================================================
 education:
   - degree: PhD Astronomy
     institution: Nicolaus Copernicus Astronomical Center, Poland
-    start: 2025-10-01
-    end: 2029-10-01
+    start: 2025-12-01
+    end: 2029-12-01
     summary: |
       Supervisor: Dr. Krzysztof Helminiak
   - degree: MS Astrophysics and Cosmology
@@ -61,7 +85,22 @@ education:
     summary: |
       Minor in Computational Intelligence. Final Grade: 8.87/10.
 
+# ============================================================
+# WORK / RESEARCH EXPERIENCE
+# To add a new entry, copy one block:
+#   - role: Job Title
+#     org: Organisation Name
+#     start: YYYY-MM-DD
+#     end: YYYY-MM-DD   # omit or leave blank if current/ongoing
+#     summary: |
+#       Description of what you did.
+# ============================================================
 work:
+  - role: PhD Researcher
+    org: Nicolaus Copernicus Astronomical Center, Poland
+    start: 2025-12-01
+    summary: |
+      Working on detached eclipsing binaries and stellar evolution through precise stellar parameter determination. Supervisor: Dr. Krzysztof Helminiak.
   - role: International Exchange Program (Master's Thesis)
     org: Universidad Nacional de La Plata, Argentina
     start: 2025-03-01
@@ -99,6 +138,12 @@ work:
     summary: |
       Taught Science and Astronomy to students at schools and Astrocamps. Night sky observation using telescopes and astrophotography. Authored a high-school-level computer science book for CUET entrance exam (May 2022). Skills: Science communication.
 
+# ============================================================
+# SKILLS
+# level: 1 (beginner) to 5 (expert)
+# To add a new skill group, copy the `- name:` block.
+# To add a skill within a group, add a `- label: / level:` pair.
+# ============================================================
 skills:
   - name: Programming Languages
     items:
@@ -127,6 +172,10 @@ skills:
       - label: Conference Presentations
         level: 4
 
+# ============================================================
+# LANGUAGES
+# level: 1–5 (5 = native/fluent)
+# ============================================================
 languages:
   - name: English
     level: 5
@@ -135,6 +184,15 @@ languages:
     level: 5
     label: Native
 
+# ============================================================
+# AWARDS & SCHOLARSHIPS
+# To add a new award, copy one block:
+#   - title: Award Name
+#     awarder: Organisation
+#     date: "YYYY-MM-DD"
+#     summary: Description of the award.
+#     icon: hero/trophy
+# ============================================================
 awards:
   - title: Ulisse Exchange Program 2024
     awarder: Università degli Studi di Padova
