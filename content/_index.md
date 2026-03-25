@@ -38,14 +38,16 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        My research focuses on **observational stellar astrophysics**, with a particular emphasis on B/Be stars in open clusters and their spectro-photometric properties. For my Master's thesis, I carried out a detailed study of the B/Be star population in the open cluster **Trumpler 11** using photometric and spectroscopic data from the Gemini Observatory.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am also broadly interested in **X-ray binaries** — I contributed to a comprehensive catalogue of Low-Mass X-ray Binaries (LMXBs) in the Galaxy, combining data from INTEGRAL and Gaia. Additionally, I have worked on applying **unsupervised machine learning** methods (GMM, DBSCAN, pyUPMASK) to stellar cluster membership determination using Gaia DR3 data, as well as classifying GRB plateau properties.
 
-        Please reach out to collaborate 😃
+        At NCAC PAS, I am working under the supervision of Dr. Krzysztof Helminiak on close binary star systems.
+
+        Please feel free to reach out if you'd like to collaborate!
     design:
       columns: '1'
   # - block: collection

@@ -5,18 +5,17 @@ name:
   display: Anish Kalsi
   given: Anish
   family: Kalsi
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  alternate: ''
+  pronunciation: ''
   pronouns: he/him
-postnominals:
-  - PhD
+postnominals: []
 status:
   icon: "☕️"
 role: Astronomy PhD Student
 bio: |
-  I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) in Poland, 
-  currently bridging the gap between theoretical models and observational data. 
-  With a background in Engineering Physics from Delhi Technological University and an MS in Astrophysics & Cosmology from the University of Padova, 
+  I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) in Poland,
+  currently bridging the gap between theoretical models and observational data.
+  With a background in Engineering Physics from Delhi Technological University and an MS in Astrophysics & Cosmology from the University of Padova,
   I approach astronomical problems with a first-principles mindset and a robust technical toolkit.
 
 affiliations:
@@ -27,8 +26,6 @@ links:
   - icon: at-symbol
     url: mailto:akalsi@ncac.torun.pl
     label: E-mail Me
-  #- icon: brands/x
-  #  url: https://x.com/example
   - icon: brands/github
     url: https://github.com/theanish37
   - icon: brands/linkedin
@@ -41,62 +38,94 @@ links:
 interests:
   - Observational Astronomy
   - Stellar Astrophysics
-  - Machine Learning and Artificial Intelligence
+  - X-ray Binaries
+  - Machine Learning in Astronomy
 
 education:
   - degree: PhD Astronomy
     institution: Nicolaus Copernicus Astronomical Center, Poland
-    start: 2025-12-06
-    end: 2029-12-01
-    #summary: |
-    #  Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    #button:
-    #  text: Download dissertation
-    #  url: /resume.pdf
-    #  icon: hero/arrow-down-tray
-  - degree: MS Astrophysics and Cosmology 
+    start: 2025-10-01
+    end: 2029-10-01
+    summary: |
+      Supervisor: Dr. Krzysztof Helminiak
+  - degree: MS Astrophysics and Cosmology
     institution: Università degli Studi di Padova
     start: 2023-10-01
     end: 2025-09-01
+    summary: |
+      Grades: 108/110. Thesis: Spectro-photometric study of the population of B/Be stars in the open cluster Trumpler 11. Supervisors: Prof. Lydia Cidale (UNLP) and Dr. Antonino Milone (UniPd).
   - degree: B.Tech Engineering Physics
     institution: Delhi Technological University (Formerly DCE)
     start: 2019-07-01
     end: 2023-06-01
+    summary: |
+      Minor in Computational Intelligence. Final Grade: 8.87/10.
 
-Research experience:
-#   - role: Senior AI Research Scientist
-#     org: Meta AI
-#     start: 2020-01-01
-#     summary: |
-#      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-#    button:
-#      text: View portfolio
-#      url: /
-#      icon: hero/arrow-down-tray
-#  - role: AI Research Intern
-#    org: OpenAI
-#    start: 2019-06-01
-#    end: 2019-12-31
-#    summary: |
-#      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+work:
+  - role: International Exchange Program (Master's Thesis)
+    org: Universidad Nacional de La Plata, Argentina
+    start: 2025-03-01
+    end: 2025-08-01
+    summary: |
+      Search for B/Be stars in open cluster Trumpler 11 using photometric and spectroscopic data from Gemini Observatory. Skills: Stellar Astrophysics, Photometry, Spectroscopy.
+  - role: Summer Intern
+    org: AstroParticule et Cosmologie (APC) laboratory, Université Paris Cité
+    start: 2023-06-01
+    end: 2023-08-01
+    summary: |
+      Supervisor: Prof. Sylvain Chaty. Worked on the catalogue of Low-mass X-ray Binaries (LMXBs). Skills: Intense literature review and X-ray binaries spectral study.
+  - role: B.Tech Final Year Project (Bachelor's Thesis)
+    org: Delhi Technological University
+    start: 2022-08-01
+    end: 2023-07-01
+    summary: |
+      Analysis of machine learning algorithms to determine membership probability of stars in clusters using Gaia DR3 data. Skills: GMM, DBSCAN, and pyUPMASK in Python, scientific writing and group management.
+  - role: Summer Intern
+    org: Indian Institute of Technology, Hyderabad
+    start: 2022-06-01
+    end: 2023-07-01
+    summary: |
+      Simulated populations of repeating Fast Radio Bursts (FRBs) sources across the sky. Determined observation patterns of RFRBs by CHIME and its hypothetical variants over a two-year observation run. Skills: Simulations in Python and radio observations.
+  - role: Krittika Summer Project 3.0
+    org: Indian Institute of Technology, Bombay
+    start: 2022-06-01
+    end: 2022-09-01
+    summary: |
+      Photometric analysis using SExtractor and PSFEx to obtain a color-magnitude diagram and determine the age of the star population of globular clusters using PanSTARRS data. Skills: Photometry.
+  - role: Educator (Experimental Science) and Subject Matter Expert
+    org: SciComm
+    start: 2019-12-01
+    end: 2020-09-01
+    summary: |
+      Taught Science and Astronomy to students at schools and Astrocamps. Night sky observation using telescopes and astrophotography. Authored a high-school-level computer science book for CUET entrance exam (May 2022). Skills: Science communication.
 
 skills:
-  - name: Technical Skills
+  - name: Programming Languages
     items:
-      - label: Python
+      - label: Python (AstroPy, scikit-learn)
         level: 5
-      - label: Machine Learning
+      - label: C/C++
+        level: 4
+      - label: SQL
+        level: 3
+      - label: R
+        level: 3
+  - name: Software & Tools
+    items:
+      - label: IRAF
+        level: 4
+      - label: MATLAB
+        level: 4
+      - label: LaTeX
         level: 5
-      #- label: Cloud Computing
-      #  level: 4
+      - label: Linux
+        level: 4
   - name: Research & Communication
     items:
       - label: Academic Writing
         level: 5
       - label: Conference Presentations
         level: 4
-      #- label: Grant Proposals
-      #  level: 4
 
 languages:
   - name: English
@@ -106,9 +135,24 @@ languages:
     level: 5
     label: Native
 
-#awards:
-#  - title: Best Paper Award
-#    awarder: NeurIPS
-#    date: "2022-12-01"
-#    summary: Awarded for groundbreaking work on efficient training of large models.
-#    icon: hero/trophy
+awards:
+  - title: Ulisse Exchange Program 2024
+    awarder: Università degli Studi di Padova
+    date: "2024-01-01"
+    summary: For master thesis at Universidad Nacional de La Plata (UNLP), Argentina. Benefits include travel expenses (up to 1500 Euros) and 700 Euros per month.
+    icon: hero/trophy
+  - title: Regione Veneto Scholarship
+    awarder: Regione Veneto, Italy
+    date: "2024-01-01"
+    summary: Full tuition fee waiver and 7655 Euros (in 2024) / 8068 Euros (in 2025) per annum.
+    icon: hero/trophy
+  - title: Charpak Lab Scholarship 2023
+    awarder: French Embassy in India
+    date: "2023-06-01"
+    summary: To pursue a research internship in France. Benefits include 700 Euros per month.
+    icon: hero/trophy
+  - title: Merit-Cum-Means Scholarship
+    awarder: Delhi Technological University
+    date: "2019-07-01"
+    summary: Benefits of 50,000 INR per annum from 2019 till 2022.
+    icon: hero/trophy
