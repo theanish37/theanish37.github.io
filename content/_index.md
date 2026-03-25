@@ -3,6 +3,19 @@
 title: ''
 date: 2022-10-24
 type: landing
+keywords:
+  - Anish Kalsi
+  - astronomy
+  - astrophysics
+  - PhD student
+  - eclipsing binaries
+  - X-ray binaries
+  - stellar astrophysics
+  - NCAC
+  - CAMK PAS
+  - Nicolaus Copernicus Astronomical Center
+  - stellar evolution
+  - Be stars
 
 design:
   # Default section spacing

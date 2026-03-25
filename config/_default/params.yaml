@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "Astronomy PhD Student | Stellar Astrophysics | X-ray Binaries | Eclipsing Binaries"
     # Site meta description for search engines and social sharing
-    description: "cademic website of Anish Kalsi, Astronomy PhD student at Nicolaus Copernicus Astronomical Center (NCAC or CAMK PAS) in Poland"
+    description: "Academic website of Anish Kalsi, Astronomy PhD student at the Nicolaus Copernicus Astronomical Center (NCAC / CAMK PAS) in Warsaw, Poland. Research in eclipsing binary stars, X-ray binaries, and high-energy astrophysics."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "BuildLore"              # Twitter/X handle for Twitter Cards (without @)
