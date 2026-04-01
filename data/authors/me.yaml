@@ -14,19 +14,18 @@ name:
   pronouns: he/him
 postnominals: []  # e.g. ["PhD"] once degree is awarded
 status:
-  icon: "☕️"
+  icon: ""
 role: Astronomy PhD Student  # Shown under your name on the homepage
 bio: |
   I am an Astrophysics PhD Candidate at the Nicolaus Copernicus Astronomical Center (NCAC PAS) in Poland,
-  currently bridging the gap between theoretical models and observational data.
+  currently bridging the gap between theoretical models and observational data. 
   With a background in Engineering Physics from Delhi Technological University and an MS in Astrophysics & Cosmology from the University of Padova,
-  My engineering physics background keeps me grounded in the fundamentals, and I'm always happiest when I have real data to work with.
 
 # ============================================================
 # AFFILIATIONS — your institution(s)
 # ============================================================
 affiliations:
-  - name: Nicolaus Copernicus Astronomical Center, Poland
+  - name: Nicolaus Copernicus Astronomical Center, Toruń Poland
     url: https://www.camk.edu.pl/en/
   # To add another affiliation, copy the two lines above
 
@@ -68,8 +67,8 @@ interests:
 education:
   - degree: PhD Astronomy
     institution: Nicolaus Copernicus Astronomical Center, Poland
-    start: 2025-12-01
-    end: 2029-12-01
+    start: 2025-12-08
+    end: 2029-12
     summary: |
       Supervisor: Dr. Krzysztof Helminiak
   - degree: MS Astrophysics and Cosmology
@@ -98,7 +97,7 @@ education:
 work:
   - role: PhD Researcher
     org: Nicolaus Copernicus Astronomical Center, Poland
-    start: 2025-12-01
+    start: 2025-12-08
     summary: |
       Working on detached eclipsing binaries and stellar evolution through precise stellar parameter determination. Supervisor: Dr. Krzysztof Helminiak.
   - role: International Exchange Program (Master's Thesis)

@@ -5,17 +5,25 @@ date: 2022-10-24
 type: landing
 keywords:
   - Anish Kalsi
+  - Anish
+  - Kalsi
   - astronomy
   - astrophysics
   - PhD student
   - eclipsing binaries
   - X-ray binaries
   - stellar astrophysics
+  - Stars
+  - Universe
   - NCAC
+  - NCAC Torun
+  - CAMK Torun
+  - CAMK
   - CAMK PAS
   - Nicolaus Copernicus Astronomical Center
   - stellar evolution
   - Be stars
+  - Study Abroad
 
 design:
   # Default section spacing
@@ -30,7 +38,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/Anish_Kalsi_CV_Oct'25.pdf
+        url: uploads/Anish_Kalsi_CV_Mar'26.pdf
       headings:
         about: ''
         education: ''
@@ -54,11 +62,11 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        My current research at **NCAC PAS** focuses on **detached eclipsing binary stars** — studying stellar evolution through precise determination of fundamental stellar parameters (masses, radii, temperatures, luminosities). Eclipsing binaries are among the most powerful tools in astrophysics for testing stellar evolution models, and I work on characterising them with high-precision photometric and spectroscopic observations.
+        My current research at **NCAC PAS** focuses on **detached eclipsing binary stars** studying stellar evolution through precise determination of fundamental stellar parameters (masses, radii, temperatures, luminosities). Eclipsing binaries are among the most powerful tools in astrophysics for testing stellar evolution models, and I work on characterising them with high-precision photometric and spectroscopic observations.
 
         For my Master's thesis, I carried out a **spectro-photometric study of B/Be stars** in the open cluster Trumpler 11 using data from the Gemini Observatory, supervised by Prof. Lydia Cidale (UNLP) and Dr. Antonino Milone (UniPd).
 
-        I am also broadly interested in **X-ray binaries** — I contributed to a comprehensive catalogue of Low-Mass X-ray Binaries (LMXBs) in the Galaxy, combining INTEGRAL and Gaia data. I have also applied **unsupervised machine learning** methods to stellar cluster membership determination (Gaia DR3) and to classifying GRB plateau properties.
+        I am also broadly interested in **X-ray binaries**. I contributed to a comprehensive catalogue of Low-Mass X-ray Binaries (LMXBs) in the Galaxy, combining INTEGRAL and Gaia data. I have also applied **unsupervised machine learning** methods to stellar cluster membership determination (Gaia DR3) and to classifying GRB plateau properties.
 
         Please feel free to reach out if you'd like to collaborate!
     design:
