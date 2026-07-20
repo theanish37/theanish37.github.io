@@ -1,13 +1,22 @@
 ---
-title: Recent & Upcoming Talks
-cms_exclude: true
-#url: talk
+title: 'Talks & Conferences'
+date: 2026-07-20
+type: landing
 
-# View
-view: card
+design:
+  spacing: '5rem'
 
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+sections:
+  - block: markdown
+    content:
+      title: Talks & Conferences
+      subtitle: You may have seen me in one of these.
+      text: |-
+        **Cool Stars 23** — Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun  
+        Tokyo, Japan · June 15–19, 2026
+
+        **EAS 2026 — Special Session SS33c** — European Astronomical Society Annual Meeting  
+        Lausanne, Switzerland · June 29 – July 3, 2026
+    design:
+      columns: '1'
 ---
