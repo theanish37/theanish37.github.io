@@ -1,4 +1,18 @@
 ---
+# ==============================================================
+# HOW TO ADD A NEW TALK / CONFERENCE ENTRY
+# ==============================================================
+# 1. Copy the entire `_TEMPLATE` folder and rename it, e.g. `eas-2026`
+# 2. Edit the fields below in your new folder's index.md
+# 3. Optionally add a `featured.jpg` image to the folder
+# 4. Commit and push — the entry will appear automatically
+# ==============================================================
+
+draft: true
+build:
+  render: never
+  list: never
+
 title: "Talk/Poster Title"
 
 event: Conference Name
@@ -14,11 +28,11 @@ abstract: |
   Full abstract paragraph(s) here.
 
 # Talk start and end times (ISO 8601 UTC)
-date: 'YYYY-MM-DDTHH:MM:00Z'
-date_end: 'YYYY-MM-DDTHH:MM:00Z'
-all_day: false   # set true for multi-day events where exact time isn't known
+date: "2026-01-01T00:00:00Z"
+date_end: "2026-01-01T00:00:00Z"
+all_day: true   # set false if exact times are known
 
-publishDate: 'YYYY-MM-DDT00:00:00Z'
+publishDate: "2026-01-01T00:00:00Z"
 
 authors:
   - me
@@ -27,15 +41,13 @@ tags: []
 
 featured: false
 
-# Optional featured image (place as featured.jpg/png in this folder)
 image:
   caption: ''
   focal_point: Right
 
-# Optional links (slides, paper, video, etc.)
+# Optional links (slides, paper, video, poster, etc.)
 links: []
-#  - icon: file-pdf
-#    name: Slides
+#  - name: Slides
 #    url: slides.pdf
 
 # Link to Hugo slides (content/slides/<folder>/index.md)
