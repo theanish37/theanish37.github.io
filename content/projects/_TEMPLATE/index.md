@@ -2,11 +2,15 @@
 # ==============================================================
 # HOW TO ADD A NEW PROJECT
 # ==============================================================
-# 1. Copy this entire `_TEMPLATE` folder and rename it, e.g.
-#    `eclipsing-binary-pipeline`
-# 2. Edit the fields below
+# 1. Copy this entire `_TEMPLATE` folder and rename it using a
+#    short slug, e.g. `eclipsing-binary-pipeline` or `debcc-v2`
+# 2. Edit the fields below in your new folder's index.md
 # 3. Optionally add a `featured.png` or `featured.jpg` image
-# 4. Commit and push — the project will appear on the site
+#    (displayed as the card thumbnail — aim for 16:9 ratio)
+# 4. Commit and push — the card appears automatically on /projects/
+#
+# REMOVING A PROJECT: delete its folder entirely.
+# REORDERING: change the `date` field — newer dates appear first.
 # ==============================================================
 
 draft: true
@@ -14,17 +18,23 @@ build:
   render: never
   list: never
 
+# Project title — shown as the card heading
 title: Project Title Here
-date: 2026-01-01   # Date the project started or was published
 
-# External links for this project (add/remove as needed)
+# Date the project started or was published (controls sort order)
+date: 2026-01-01
+
+# External links shown as icon buttons on the card.
+# Common types: site, pdf, code, video, dataset, slides, poster
 links:
   - type: site
-    url: https://github.com/theanish37/your-repo   # GitHub or project URL
+    url: https://github.com/theanish37/your-repo
   # - type: pdf
   #   url: /uploads/report.pdf
+  # - type: video
+  #   url: https://youtube.com/watch?v=...
 
-# Tags for filtering/categorisation
+# Tags shown below the card description
 tags:
   - Eclipsing Binaries
   - Python
@@ -32,13 +42,14 @@ tags:
 
 ---
 
-<!-- Write a short description of the project here (1–3 sentences shown in the card) -->
+<!-- SHORT DESCRIPTION (shown in the project card, before <!--more-->)
+     Keep it to 1–3 sentences. -->
 Brief description of the project.
 
 <!--more-->
 
-<!-- Everything below <!--more--> appears on the full project page only -->
+<!-- EVERYTHING BELOW appears only on the full project detail page. -->
 
 ## Overview
 
-Longer description of the project, methods, results, etc.
+Longer description of the project — background, methods, results, etc.
